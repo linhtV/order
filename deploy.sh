@@ -20,12 +20,6 @@ killTomcat()
       kill -9 $pid
     fi
 }
-user=`who am i`
-echo "name : $user"
-
-mvnv = `which mvn`
-
-echo "mvn:  $mvnv"
 
 cd $PROJ_PATH/order
 mvn clean install
