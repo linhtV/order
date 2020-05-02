@@ -21,6 +21,7 @@ killTomcat()
     fi
 }
 cd $PROJ_PATH/order
+echo "$PROJ_PATH/order"
 mvn clean install
 
 # 停tomcat
