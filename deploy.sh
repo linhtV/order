@@ -20,9 +20,16 @@ killTomcat()
       kill -9 $pid
     fi
 }
+user=`who am i`
+echo "name : user"
+
+echo `which mvn`
+
+
 cd $PROJ_PATH/order
-echo "$PROJ_PATH/order"
 mvn clean install
+
+
 
 # 停tomcat
 killTomcat
